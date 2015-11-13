@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=1024")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="author" content="Bartek Szopka")
+    link(name="shortcut icon" href="favicon.png")
+    link(name="apple-touch-icon" href="apple-touch-icon.png")
+    link(href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet")
+    title #{title}
+    style(type='text/css') !{css}
+
+  body 
+    div(id='impress') !{marked}
+    script(type='text/javascript') !{js}
+    script(type='text/javascript').
+      impress().init();

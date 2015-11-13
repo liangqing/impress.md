@@ -1,0 +1,17 @@
+h1,h2,h3,h4,h5 {
+  margin-bottom: 1em;
+}
+h1 {
+  text-align: center;
+  font-size: 200%;
+  line-height: 400px;
+}
+pre {
+  background-color: #eee;
+  padding: .2em .8em;
+  box-shadow: 1px 1px 8px 2px #ccc inset;
+  font-size: .8em;
+}
+.screen {
+  text-align: center;
+}
