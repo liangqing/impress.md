@@ -28,9 +28,11 @@ echo "Hello World"
 
 ```C++
 #include<iostream>
+using namespace std;
 
-void main() {
-    count << "Hello World" << endl;
+int main() {
+    cout << "Hello World" << endl;
+    return 0;
 }
 ```
 
