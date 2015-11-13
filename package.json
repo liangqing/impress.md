@@ -1,6 +1,6 @@
 {
   "name": "impress.md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": "./bin/impress.md",
@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "liangqing",
+  "keywords": ["markdown", "impress.js", "slides", "impress"],
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.0.5",
     "clean-css": "^3.4.7",
     "highlight.js": "^8.9.1",
     "jade": "^1.11.0",
+    "lodash": "^3.10.1",
     "marked": "^0.3.5",
     "uglify-js": "^2.6.0"
   }
