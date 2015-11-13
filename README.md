@@ -19,7 +19,7 @@ npm install -g impress.md
 
 * level 1 header and leval 2 header construct a slide
 * use '[](attr1=value, attr2=value2)' to set impress.js properties
-* See the [example](), [markdown file]()
+* See the [example](https://rawgit.com/liangqing/impress.md/master/example/HelloWorld.html), [markdown file](https://rawgit.com/liangqing/impress.md/master/example/HelloWorld.md)
 
 ## Convert markdown to html
 
