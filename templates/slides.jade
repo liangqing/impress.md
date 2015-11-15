@@ -4,15 +4,23 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport" content="width=1024")
     meta(name="apple-mobile-web-app-capable" content="yes")
-    meta(name="author" content="Bartek Szopka")
+    meta(name="author" content="#{author}")
     link(name="shortcut icon" href="favicon.png")
     link(name="apple-touch-icon" href="apple-touch-icon.png")
     link(href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet")
     title #{title}
     style(type='text/css') !{css}
 
-  body 
+  body(class="impress-not-supported")
+    div(class="fallback-message")
+      | <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p><p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     div(id='impress') !{marked}
+    div(class="hint")
+      | <p>Use a spacebar or arrow keys to navigate</p>
+    script(type='text/javascript').
+      if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
     script(type='text/javascript') !{js}
     script(type='text/javascript').
       impress().init();

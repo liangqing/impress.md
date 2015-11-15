@@ -2,9 +2,10 @@ h1,h2,h3,h4,h5 {
   margin-bottom: 1em;
 }
 h1 {
-  text-align: center;
-  font-size: 200%;
-  line-height: 400px;
+  font-size: 150%;
+}
+h2 {
+  font-size: 120%;
 }
 pre {
   background-color: #eee;
@@ -15,3 +16,11 @@ pre {
 .screen {
   text-align: center;
 }
+.screen h1 {
+  text-align: center;
+  line-height: 400px;
+}
+.hide-title h1, .hide-title h2 {
+  display: none;
+}
+
